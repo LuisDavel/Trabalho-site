@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <Title>AnimeFlex</Title>
+        <Style type="text/css">
+            /* IDS */
+            /* <--------- Padrão da página Ajustes ---------> */
+            #Resolução{
+                width: auto;
+                margin: auto;
+            }
+            /* <--------- Cabeçalho Ajustes ---------> */
+            #Cabeçalho{
+                width: 100%;
+                background-image: url(Utilitarios/Banner.jpg);
+                background-color: aqua;
+                margin-bottom: 40px;
+                float: top;
+                height: 190px;
+            }
+            /* <--------- Navegador Ajustes ---------> */
+            #Navegador{
+                overflow: hidden;
+                background-color:teal;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            /* <--------- Link do navegador Ajustes ---------> */
+            #Navegador a{
+                font-family: Arial, Helvetica, sans-serif;
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            /* <--------- Hover do navegador com Link Ajustes ---------> */
+            #Navegador a:hover{
+                background: white;
+                color: black;
+            }
+            /* <--------- Botão em verde escuro ---------> */
+            #Navegador a.Ativo{
+                background:rgb(16, 52, 53);
+                color: white;
+            }
+            /* <--------- Corpo Ajustes ---------> */
+            #Corpo{
+                height: auto;
+                width: 80%;
+                margin: -40px 0px;
+                float: right;
+                background-color: white ;
+            }
+            /* <--------- Direta Ajustes ---------> */
+            #Direta{
+                margin: 30px 0px;
+                height: 2650px;
+                width: 10%;
+                float: right;
+                background-color: rgb(197, 196, 196);
+            }
+            /* <--------- Esquerda Ajustes ---------> */
+            #Esquerda{
+                margin: 30px 0px;
+                height: 2650px;
+                width: 10%;
+                float: left;
+                background-color:  rgb(197, 196, 196);
+            }
+            /* <--------- Rodapé Ajustes ---------> */
+            #Rodapé{
+                margin-top: 20px;
+                width: 100%;
+                height: 80px;
+                background-color: rgb(16, 52, 53);
+                float: left;
+            }
+            /* <--------- Rodapé paragrafo Ajustes ---------> */
+            #Rodapé p{
+                margin: 0px;
+                padding: 30px;
+                text-align: center;
+                color: #e3e3e3;
+            }
+            /* Class */
+            /* <--------- Div que centraliza noticias ---------> */
+            .MoveLado{
+                margin-left: 4%;
+            }
+            /* <--------- Ajuste da Imagem acima do titulo ---------> */
+            .ImgAjust{
+                margin-left: 25%;
+                width: 50%;
+                height: 50%;
+
+            }
+            /* <--------- Texto de data ---------> */
+            .TextData{
+                font-family: Tahoma, sans-serif;
+                color: darkgrey;
+                font-size: 10px;
+                padding: 0px;
+                margin: -5px;
+                text-align: center;
+            }
+            /* CSS Normal */
+            /* <--------- Body Ajustes ---------> */
+            body {
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* <--------- Barra abaixo de noticias Ajustes ---------> */
+            hr#barra{
+                width: 93%;
+                margin: 0%;
+                margin-bottom: 0%;
+                border: 1px solid;
+            }
+            /* <--------- Artigo Ajustes ---------> */
+            article{
+                float: center;
+                width: 70%;
+                margin: 10px 100px;
+                padding: 0px;
+                text-align: left;
+            }
+            /* <--------- Titulo abaixo da img Ajustes ---------> */
+            h3{
+                text-align: center;
+            }
+            /* <--------- Paragrafos Ajustes ---------> */
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-style: none;
+                text-align: left;
+            }
+
+        </Style>
+    </head>
+
+    <body>
+        <div id="Resolução"> <!-- Mantém o site em uma resolução padrão -->
+
+            <!-- Cabeçalho -->
+            <header id="Cabeçalho">
+                <!-- Background imagem no css -->
+            </header>
+
+            <!-- Navegador do site -->
+            <nav id="Navegador">
+                <a class="Ativo" href="index.html">INICIO</a>
+                <a href="Noticias.html">NOTICIA</a>     
+                <a href="Guia.html">GUIA DE TEMPORADA</a>
+                <a href="Conta.html">FALE CONOSCO</a>
+            </nav>
+            <!-- Direta--> 
+            <div id="Direta">
+            </div>
+            <!-- Esquerda-->
+            <div id="Esquerda">
+            </div>       
+            <!-- Corpo -->
+            <section id="Corpo">
+                
+                <div Class="MoveLado"> <!-- Mantem os elementos dentro centralizados -->
+
+                <div class="Toy"> <!-- Titulo com logo ao lado -->
+                    <h2 class="TitleNoti"><img src="Noticias/Y.png" > Mestre Jiraya agradece os fãs </h2>
+                </div>
+                
+                <div > <!-- Barra devisoria -->
+                    <hr id="barra"> 
+                </div>
+                <!-- Artigo "Assunto"-->
+                <article>
+                    <img src="Noticias/Jiraya/AtorJiraya.jpg" class="ImgAjust" alt="Ator de Jiraya">
+                    <p class="TextData">Takumi Tsutsui, o famoso Jiraya (Foto: Rafael Cusato/Edit: Luis Davel)</p>
+                    <h3>Ator que interpretou Jiraya comemora carinho dos fãs em SP: “Todo mundo me abraça”</h3>
+                    <p>Há mais de 30 anos, crianças e adolescentes paravam em frente à telinha para acompanhar as aventuras de Jiraya,o Incrível Ninja. A série japonesa, que foi ao ar na antiga TV Manchete no final dos anos 1980, foi um sucesso na Ásia e no Brasil e faz parte de um gênero que até hoje encanta gerações: os super-heróis.</p>
+                    <p>Pela décima primeira vez no país, Takumi Tsutsui, ator que dava vida a Toha Yamaji, o Jiraya, conversou com a QUEM sobre a carreira e o carinho dos fãs brasileiros durante o Anime Friends 2019, que acontece nos dias 12 a 14 de julho no Anhembi em São Paulo. O evento reúne convidados da cultura pop e geek do Japão e da Coreia do Sul. Acompanhado de um tradutor, Tsutsui fazia as tradicionais poses de Jiraya para as fotos com os fãs.</p>
+                    <p>“A primeira vez que eu vim para o Brasil, o pessoal foi tão caloroso que eu não acreditava no que eu via. Fiquei um pouco assustado, é diferente de como as pessoas são no Japão. Todo mundo me abraça, todos têm o coração muito aberto. Agora eu que vou abraçar os fãs (risos)”, brinca o ator de 55 anos.</p>
+                    <img src="Noticias/Jiraya/Jiraya.jpg" class="ImgAjust" alt="Ator de Jiraya">
+                    <p class="TextData">Takumi Tsutsui, o famoso Jiraya (Foto: Rafael Cusato/Edit: Luis Davel)</p>
+                    <p>Após Jiraya, Tsutsui não interpretou mais heróis e continuou atuando em doramas (as novelas dramáticas japonesas), séries e filmes de perseguição policial e investigação. Ele também trabalha como dublador de filmes norte-americanos no Japão.</p>
+                    <p>“Na época da estreia de Jiraya, o pessoal me reconhecia. Mas agora, 30 anos depois, são poucos os que me param na rua”, explica o ator, que não esperava que a série chegasse, literalmente, do outro lado do mundo. “Eu não sabia, mas eu tenho parentes aqui no Brasil e meu primo falou que passava na televisão aqui. Queria entender por que Jiraya é tão famoso aqui. Tenho fãs pequenos, será que são os pais que mostram?”.</p>
+                    <img src="Noticias/Jiraya/Jiraya2.jpg" class="ImgAjust" alt="Ator de Jiraya">
+                    <p class="TextData">Takumi Tsutsui, o famoso Jiraya (Foto: Rafael Cusato/Edit: Luis Davel)</p>
+                    <p>Questionado sobre a famosa expressão “virado o Jiraya”, Tsutsui quer entender de onde surgiu a frase. “Eu ouvi isso há uns quatro anos. Eu queria saber por que a palavra Jiraya ficou marcada (risos). Qual foi a última vez que vocês falaram isso?”, perguntou ele para a equipe da QUEM.</p>
+                    <p>Além de São Paulo, Tsutsui já visitou o Rio de Janeiro, Recife e o Mato Grosso. Ao posar para as fotos, ele até fez questão de falar que estava imitando o Cristo Redentor. “Nós japoneses sabemos que vocês jogam muito bem futebol. De música, eu só sei Garota de Ipanema!”, diz o ator. Questionado sobre uma comida brasileira que gosta, ele foi direto: churrasco.</p>
+                    <p>“Estou hospedado na Liberdade [bairro reduto de imigrantes japoneses]. Outro dia fui comer lámen, mas confesso que o do Japão é mais gostoso”, brinca Tsutsui, que sente vontade de aprender a falar português. “Eu não entendo nada, mas queria aprender um pouquinho, é muito difícil.”</p>
+                    <img src="Noticias/Jiraya/Jiraya3.jpg" class="ImgAjust" alt="Ator de Jiraya">
+                    <p class="TextData">Takumi Tsutsui, o famoso Jiraya (Foto: Rafael Cusato/Edit: Luis Davel)</p>
+                    <p>O carinho dos fãs brasileiros sempre é lembrado pelo ator. “Eu sou muito feliz de ter feito o Jiraya. Eu quero mais eventos assim, chamando artistas de vários lugares do planeta. Os corações de todos se juntam e nos tornamos uma grande família.”</p>
+                    <p>Jiraya foi um dos ícones da cultura pop oriental nos anos 1980 e se junta ao grande time atual de heróis, como os “Vingadores”. Tsutsui conhece todos eles e se dispõe a mostrar suas habilidades mais uma vez: “Eu também quero fazer! Quero tentar [ser um deles]”.</p>
+                    <p><a href="https://revistaquem.globo.com/Entrevista/noticia/2019/07/ator-que-interpretou-jiraya-comemora-carinho-dos-fas-em-sp-todo-mundo-me-abraca.html"  target="_blank"><p>Entrevista removida do site da Globo de forma ilustrativa</p></a></p>
+                </article>
+                
+               </div> <!-- Fecha a Centralização dos Elementos -->   
+            </section>
+            
+            <!-- Rodapé -->
+            <footer id="Rodapé">
+                <p>© 2019 Luis&Hiam - Todos os Direitos Reservados</p>
+            </footer>
+            
+        </div>
+    </body>
+</html>

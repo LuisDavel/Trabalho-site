@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <Title>AnimeFlex</Title>
+        <Style type="text/css">
+            /* IDS */
+            /* <--------- Padrão da página Ajustes ---------> */
+            #Resolução{
+                width: auto;
+                margin: 0px 0px;
+            }
+            /* <--------- Cabeçalho Ajustes ---------> */
+            #Cabeçalho{
+                width: 100%;
+                background-image: url(Utilitarios/Banner.jpg);
+                background-color: aqua;
+                margin-bottom: 40px;
+                float: top;
+                height: 190px;
+            }
+            /* <--------- Navegador Ajustes ---------> */
+            #Navegador{
+                overflow: hidden;
+                background-color:teal;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            /* <--------- Link do navegador Ajustes ---------> */
+            #Navegador a{
+                font-family: Arial, Helvetica, sans-serif;
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            /* <--------- Hover do navegador com Link Ajustes ---------> */
+            #Navegador a:hover{
+                background: white;
+                color: black;
+            }
+            /* <--------- Botão em verde escuro ---------> */
+            #Navegador a.Ativo{
+                background:rgb(16, 52, 53);
+                color: white;
+            }
+            /* <--------- Corpo da Direita Ajustes ---------> */   
+            #Direita{
+                left: 80%;
+                top: 240px;
+                overflow: hidden;
+                height: 300px;
+                position: fixed;
+                width: 20%;
+                margin: 0px 0px;
+                float: top;
+                background-color:rgb(226, 224, 224);
+                border-left: 2px solid #00a5ab;
+                border-top:  2px solid #00a5ab;
+                border-bottom:  2px solid #00a5ab;
+            }
+            /* <--------- Corpo Ajustes ---------> */
+            #Corpo{
+                height: 1000px;
+                width: 80%;
+                margin: 0px 0px;
+                float: top;
+                background-color: white;
+            }
+            /* <--------- Rodapé Ajustes ---------> */
+            #Rodapé{
+                height: 80px;
+                background-color: rgb(16, 52, 53);
+                float: bottom;
+            }
+            /* <--------- Rodapé paragrafo Ajustes ---------> */
+            #Rodapé p{
+                margin: 0px;
+                padding: 30px;
+                text-align: center;
+                color: #e3e3e3;
+            }
+            /* <--------- Barra em azul Ajustes ---------> */
+            #HRDentro{
+                width: 95%;
+                border: 1px solid;
+                color: #00a5ab;
+                margin: 40px 0px;
+                margin-bottom: 10px;
+            }
+            /* Class */
+            /* <--------- Texto de data ---------> */
+            .TextData{
+                font-family: Tahoma, sans-serif;
+                color: darkgrey;
+                font-size: 10px;
+                padding: 0px;
+                margin: -5px;
+            }
+            /* <--------- Barra da Direta (Flutuante) ---------> */
+            .HRDireita{
+                width: 90%;
+                border: 1px solid;
+                color: #00a5ab;
+                margin: -10px 10px;
+                margin-bottom: 10px;
+            }
+            /* <--------- Div que centraliza noticias ---------> */
+            .MoveLado{
+                margin-left: 4%;
+            }
+            /* <--------- Margem do Logo ao lado de Noticias ---------> */
+            .Toy{
+                margin-left: 10px;
+            }
+            /* <--------- Ajuste da Margem do titulo "Noticias" ---------> */
+            .TitleNoti{
+                margin: 0px
+            }
+           /* <--------- Ajuste da Imagem ao lado das Noticias ---------> */
+            .ImgFloat{
+                margin: 0px 0px;
+                float: left;
+            }
+            /* <--------- Texto da direta (flutuante) ---------> */
+            .TextDireita,.Titu{
+                text-align: center;
+                margin:0px;
+            }
+            /* <--------- Img da direta (flutuante) ---------> */
+            .ImgDireita{
+                background-image: url(Noticias/GUIA.jpg);
+                margin: 0px 25px;
+                border: 1px solid white;
+            }
+            .ImgDireita:hover{
+                background-image: url(Noticias/GUIAHover.jpg);
+            }
+            /* CSS Normal */
+            /* <---------Texto Linkado ---------> */
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            /* <--------- Hover Texto Linkado ---------> */
+            a:hover{
+                color:rgb(77, 145, 122);
+            }
+            /* <--------- Ajuste do Titulo das Noticias ---------> */
+            span{
+                text-align: left;
+            }
+            /* <--------- Ajuste da Lista das Noticias ---------> */
+            li{
+                list-style-type: none;
+            }
+            /* <--------- Ajuste do Ul e do Li das Noticias ---------> */
+            ul, li{
+                margin: 0px 0px;
+                padding: 5px;
+            }
+            /* <--------- Body Ajustes ---------> */
+            body {
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* <--------- Barra abaixo de noticias Ajustes ---------> */
+            hr#barra{
+                width: 94%;
+                margin: 1%;
+                margin-bottom: 1%;
+                border: 1px solid;
+            }
+
+        </Style>
+    </head>
+
+    <body>
+        <div id="Resolução"> <!-- Mantém o site em uma resolução padrão -->
+
+            <!-- Cabeçalho -->
+            <header id="Cabeçalho">
+                <!-- Background imagem no css -->
+            </header>
+
+            <!-- Navegador do site -->
+            <nav id="Navegador">
+                <a class="Ativo" href="index.html">INICIO</a>
+                <a href="Noticias.html">NOTICIA</a>     
+                <a href="Guia.html">GUIA DE TEMPORADA</a>
+                <a href="Conta.html">FALE CONOSCO</a>
+            </nav>
+
+            <!-- Direita -->
+            <div id="Direita">
+                <ul class="TextDireta">
+                    <li class="Titu" ><H3>Guias de Temporada</H3></li>
+                    <hr class="HRDireita">
+                    <li><a href="Guia.html"><img src="Utilitarios/NoFace1.png" class="ImgDireita" alt=""></a></li> 
+                    <li class="Titu">Guia de temporada 2019</li>
+                    <br>
+                </ul>
+            </div>             
+            <!-- Corpo -->
+            <section id="Corpo">
+                
+                <div Class="MoveLado"> <!-- Mantem os elementos dentro centralizados -->
+
+                <div class="Toy"> <!-- Titulo com logo ao lado -->
+                    <h2 class="TitleNoti"><img src="Noticias/Y.png" > Notícias  </h2>
+                </div>
+                
+                <div > <!-- Barra devisoria -->
+                    <hr id="barra"> 
+                </div>
+
+                <div class="Coluna1"> <!-- Coluna 1 de Noticias -->
+                    <ul> <!-- SPAN TA TE DANDO UMA AJUDA APROVEITA-->
+                        <li><a href="#"><img src="Noticias/nanatsu/nana.jpg" class="ImgFloat" alt="X"> <span><h3>&nbsp; Novo trailer e data de estreia da 3ª temporada de Nanatsu no Taizai</h3></span></a><p>&nbsp; Foi revelado um novo vídeo promocional para a terceira temporada de Nanatsu no Taizai, <br> &nbsp; intitulada 'Nanatsu no Taizai: Kamigami no Gekirin'. A nova temporada do anime vai...</p> </li>
+                        <hr id="HRDentro">
+                        <li><a href="#"><img src="Noticias/SAO/SAO.jpg" class="ImgFloat" alt="X"> <span><h3>&nbsp; Novo trailer de Sword Art Online: Alicization - War of Underworld</h3></span></a><p>&nbsp; Trailer mostra a música de abertura!  Foi revelado um novo vídeo promocional para a segunda parte de  <br> &nbsp; Sword Art Online: Alicization, intitulada 'Sword Art Online: Alicization -...</p> </li>
+                        <hr id="HRDentro">
+                        <li><a href="#"><img src="Noticias/FireForce/FireForce.jpg" class="ImgFloat" alt="X"> <span><h3>&nbsp; Anime de Fire Force entrará em hiatos</h3></span></a><p>&nbsp; Fire Force entrará em hiatos de duas semanas!  O Twitter oficial do anime 'Fire Force' <br>&nbsp; (Enen no Shouboutai) postou que o anime entrará em hiatos de...</p> </li>
+                        <hr id="HRDentro">
+                        <li><a href="#"><img src="Noticias/Demon/DemonSlayer.jpg"  class="ImgFloat" alt="X"> <span><h3>&nbsp; Segunda temporada de Demon Slayer?</h3></span></a><p>&nbsp; Dubladores falam sobre a possibilidade de segunda temporada para Demon Slayer!  Demon Slayer<br>&nbsp; (Kimetsu no Yaiba) vem fazendo um sucesso estrondosso, não so no japão, como...</p> </li>
+                        <hr id="HRDentro">
+                    </ul>
+                    
+                </div> <!-- Fecha a Coluna 1 de Noticias -->
+
+                </div> <!-- Fecha a Centralização dos Elementos -->  
+                 
+            </section>
+            
+            <!-- Rodapé -->
+            <footer id="Rodapé">
+                <p>© 2019 Luis&Hiam - Todos os Direitos Reservados</p>
+            </footer>
+            
+        </div>
+    </body>
+</html>

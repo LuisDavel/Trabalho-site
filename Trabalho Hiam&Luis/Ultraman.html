@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <Title>AnimeFlex</Title>
+        <Style type="text/css">
+            /* IDS */
+            /* <--------- Padrão da página Ajustes ---------> */
+            #Resolução{
+                width: auto;
+                margin: auto;
+            }
+            /* <--------- Cabeçalho Ajustes ---------> */
+            #Cabeçalho{
+                width: 100%;
+                background-image: url(Utilitarios/Banner.jpg);
+                background-color: aqua;
+                margin-bottom: 40px;
+                float: top;
+                height: 190px;
+            }
+            /* <--------- Navegador Ajustes ---------> */
+            #Navegador{
+                overflow: hidden;
+                background-color:teal;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            /* <--------- Link do navegador Ajustes ---------> */
+            #Navegador a{
+                font-family: Arial, Helvetica, sans-serif;
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            /* <--------- Hover do navegador com Link Ajustes ---------> */
+            #Navegador a:hover{
+                background: white;
+                color: black;
+            }
+            /* <--------- Botão em verde escuro ---------> */
+            #Navegador a.Ativo{
+                background:rgb(16, 52, 53);
+                color: white;
+            }
+            /* <--------- Corpo Ajustes ---------> */
+            #Corpo{
+                height: 400px;
+                width: 80%;
+                margin: -40px 0px;
+                float: right;
+                background-color: white ;
+            }
+            /* <--------- Direta Ajustes ---------> */
+            #Direta{
+                margin: 30px 0px;
+                height: 720px;
+                width: 10%;
+                float: right;
+                background-color: rgb(197, 196, 196);
+            }
+            /* <--------- Esquerda Ajustes ---------> */
+            #Esquerda{
+                margin: 30px 0px;
+                height: 720px;
+                width: 10%;
+                float: left;
+                background-color:  rgb(197, 196, 196);
+            }
+            /* <--------- Rodapé Ajustes ---------> */
+            #Rodapé{
+                margin-top: 20px;
+                width: 100%;
+                height: 80px;
+                background-color: rgb(16, 52, 53);
+                float: left;
+            }
+            /* <--------- Rodapé paragrafo Ajustes ---------> */
+            #Rodapé p{
+                margin: 0px;
+                padding: 30px;
+                text-align: center;
+                color: #e3e3e3;
+            }
+            /* Class */
+            /* <--------- Div que centraliza noticias ---------> */
+            .MoveLado{
+                margin-left: 4%;
+            }
+            /* <--------- Ajuste da Imagem acima do titulo ---------> */
+            .ImgAjust{
+                margin-left: 25%;
+                width: 50%;
+                height: 50%;
+
+            }
+            /* <--------- Texto de data ---------> */
+            .TextData{
+                font-family: Tahoma, sans-serif;
+                color: darkgrey;
+                font-size: 10px;
+                padding: 0px;
+                margin: -5px;
+                text-align: center;
+            }
+            /* CSS Normal */
+            /* <--------- Body Ajustes ---------> */
+            body {
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* <--------- Barra abaixo de noticias Ajustes ---------> */
+            hr#barra{
+                width: 93%;
+                margin: 0%;
+                margin-bottom: 0%;
+                border: 1px solid;
+            }
+            /* <--------- Artigo Ajustes ---------> */
+            article{
+                float: center;
+                width: 70%;
+                margin: 10px 100px;
+                padding: 0px;
+                text-align: left;
+            }
+            /* <--------- Titulo abaixo da img Ajustes ---------> */
+            h3{
+                text-align: center;
+            }
+            /* <--------- Paragrafos Ajustes ---------> */
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-style: none;
+                text-align: left;
+            }
+
+        </Style>
+    </head>
+
+    <body>
+        <div id="Resolução"> <!-- Mantém o site em uma resolução padrão -->
+
+            <!-- Cabeçalho -->
+            <header id="Cabeçalho">
+                <!-- Background imagem no css -->
+            </header>
+
+            <!-- Navegador do site -->
+            <nav id="Navegador">
+                <a class="Ativo" href="index.html">INICIO</a>
+                <a href="Noticias.html">NOTICIA</a>     
+                <a href="Guia.html">GUIA DE TEMPORADA</a>
+                <a href="Conta.html">FALE CONOSCO</a>
+            </nav>
+            <!-- Direta--> 
+            <div id="Direta">
+            </div>
+            <!-- Esquerda-->
+            <div id="Esquerda">
+            </div>       
+            <!-- Corpo -->
+            <section id="Corpo">
+                
+                <div Class="MoveLado"> <!-- Mantem os elementos dentro centralizados -->
+
+                <div class="Toy"> <!-- Titulo com logo ao lado -->
+                    <h2 class="TitleNoti"><img src="Noticias/Y.png" > Anime estreia em 2019 junto com outros dois títulos</h2>
+                </div>
+                
+                <div > <!-- Barra devisoria -->
+                    <hr id="barra"> 
+                </div>
+                <!-- Artigo "Assunto"-->
+                <article>
+                    <img src="Noticias/Ultraman/Ultra.jpeg" alt="">
+                    <p class="TextData">Imagem removida do google imagens</p>
+                    <h3>Anime estreia em 2019 junto com outros dois títulos: Neon Genesis Evangelion e a animação em stop-motion Rilakkuma and Kaoru.</h3>
+                    <p>A Netflix divulgou um trailer de seu novo anime, Ultraman, que chega à plataforma de streaming em 01 de abril de 2019. Além disso, o serviço também divulgou que a produção Neon Genesis Evangelion, um dos mais influentes animes de todos os tempos, estreia na primavera americana (entre março e junho no Brasil).</p>
+                    <p>O trailer de Ultraman mostra o personagem Shinjiro, filho do protagonista Shin Hayata, vestindo o manto do herói. Confira no vídeo acima!</p>
+                    <p>Fora estas duas produções, a Netflix também irá incluir no catálogo uma animação em stop-motion chamada Rilakkuma And Kaoru, que é baseada em personagens muito conhecidos no Japão. A estreia está marcada para 19 de abril de 2019.</p>
+                    <p><a href="http://www.adorocinema.com/noticias/series/noticia-144926/"  target="_blank"><p>Noticia removida do site do Adoro Cinema de forma ilustrativa</p></a></p>
+                </article>
+                
+               </div> <!-- Fecha a Centralização dos Elementos -->   
+            </section>
+            
+            <!-- Rodapé -->
+            <footer id="Rodapé">
+                <p>© 2019 Luis&Hiam - Todos os Direitos Reservados</p>
+            </footer>
+            
+        </div>
+    </body>
+</html>

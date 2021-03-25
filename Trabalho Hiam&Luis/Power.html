@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <Title>AnimeFlex</Title>
+        <Style type="text/css">
+            /* IDS */
+            /* <--------- Padrão da página Ajustes ---------> */
+            #Resolução{
+                width: auto;
+                margin: auto;
+            }
+            /* <--------- Cabeçalho Ajustes ---------> */
+            #Cabeçalho{
+                width: 100%;
+                background-image: url(Utilitarios/Banner.jpg);
+                background-color: aqua;
+                margin-bottom: 40px;
+                float: top;
+                height: 190px;
+            }
+            /* <--------- Navegador Ajustes ---------> */
+            #Navegador{
+                overflow: hidden;
+                background-color:teal;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            /* <--------- Link do navegador Ajustes ---------> */
+            #Navegador a{
+                font-family: Arial, Helvetica, sans-serif;
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            /* <--------- Hover do navegador com Link Ajustes ---------> */
+            #Navegador a:hover{
+                background: white;
+                color: black;
+            }
+            /* <--------- Botão em verde escuro ---------> */
+            #Navegador a.Ativo{
+                background:rgb(16, 52, 53);
+                color: white;
+            }
+            /* <--------- Corpo Ajustes ---------> */
+            #Corpo{
+                height: auto;
+                width: 80%;
+                margin: -40px 0px;
+                float: right;
+                background-color: white ;
+            }
+            /* <--------- Direta Ajustes ---------> */
+            #Direta{
+                margin: 30px 0px;
+                height: 720px;
+                width: 10%;
+                float: right;
+                background-color: rgb(197, 196, 196);
+            }
+            /* <--------- Esquerda Ajustes ---------> */
+            #Esquerda{
+                margin: 30px 0px;
+                height: 720px;
+                width: 10%;
+                float: left;
+                background-color:  rgb(197, 196, 196);
+            }
+            /* <--------- Rodapé Ajustes ---------> */
+            #Rodapé{
+                margin-top: 20px;
+                width: 100%;
+                height: 80px;
+                background-color: rgb(16, 52, 53);
+                float: left;
+            }
+            /* <--------- Rodapé paragrafo Ajustes ---------> */
+            #Rodapé p{
+                margin: 0px;
+                padding: 30px;
+                text-align: center;
+                color: #e3e3e3;
+            }
+            /* Class */
+            /* <--------- Div que centraliza noticias ---------> */
+            .MoveLado{
+                margin-left: 4%;
+            }
+            /* <--------- Ajuste da Imagem acima do titulo ---------> */
+            .ImgAjust{
+                margin-left: 25%;
+                width: 50%;
+                height: 50%;
+            }
+            /* <--------- Texto de data ---------> */
+            .TextData{
+                font-family: Tahoma, sans-serif;
+                color: darkgrey;
+                font-size: 10px;
+                padding: 0px;
+                margin: -5px;
+                text-align: center;
+            }
+            /* CSS Normal */
+            /* <--------- Body Ajustes ---------> */
+            body {
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* <--------- Barra abaixo de noticias Ajustes ---------> */
+            hr#barra{
+                width: 93%;
+                margin: 0%;
+                margin-bottom: 0%;
+                border: 1px solid;
+            }
+            /* <--------- Artigo Ajustes ---------> */
+            article{
+                float: center;
+                width: 70%;
+                margin: 10px 100px;
+                padding: 0px;
+                text-align: left;
+            }
+            /* <--------- Titulo abaixo da img Ajustes ---------> */
+            h3{
+                text-align: center;
+            }
+            /* <--------- Paragrafos Ajustes ---------> */
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-style: none;
+                text-align: left;
+            }
+
+        </Style>
+    </head>
+
+    <body>
+        <div id="Resolução"> <!-- Mantém o site em uma resolução padrão -->
+
+            <!-- Cabeçalho -->
+            <header id="Cabeçalho">
+                <!-- Background imagem no css -->
+            </header>
+
+            <!-- Navegador do site -->
+            <nav id="Navegador">
+                <a class="Ativo" href="index.html">INICIO</a>
+                <a href="Noticias.html">NOTICIA</a>     
+                <a href="Guia.html">GUIA DE TEMPORADA</a>
+                <a href="Conta.html">FALE CONOSCO</a>
+            </nav>
+            <!-- Direta--> 
+            <div id="Direta">
+            </div>
+            <!-- Esquerda-->
+            <div id="Esquerda">
+            </div>       
+            <!-- Corpo -->
+            <section id="Corpo">
+                
+                <div Class="MoveLado"> <!-- Mantem os elementos dentro centralizados -->
+
+                <div class="Toy"> <!-- Titulo com logo ao lado -->
+                    <h2 class="TitleNoti"><img src="Noticias/Y.png" > Ator de ranger vermelho está fora </h2>
+                </div>
+                
+                <div > <!-- Barra devisoria -->
+                    <hr id="barra"> 
+                </div>
+                <!-- Artigo "Assunto"-->
+                <article>
+                    <img src="Noticias/Power/Power1.jpg" class="ImgAjust" alt="Ator de Jiraya">
+                    <p class="TextData">Imagem removida do google</p>
+                    <h3>Dacre Montgomery revela que não deve voltar a interpretar o Ranger Vermelho.</h3>
+                    <p>Tente outra vez... Os Power Rangers podem voltar às telonas, mas deve promover um novo reboot na franquia, sem o retorno dos protagonistas do filme de 2017. A notícia foi revelada por Dacre Montgomery, que interpretou o Ranger Vermelho no longa de Dean Israelite.</p>
+                    <p>Para promover sua participação na terceira temporada de Stranger Things, o jovem ator fez um bate-papo com fãs no Reddit, onde falou sobre a possibilidade de reprisar o papel de Jason. "Acho que eles estão fazendo um novo filme, mas não será comigo e com o restante do elenco. Então, a saga deve continuar, mas sem a gente."</p>
+                    <p>Power Rangers trouxe Dacre Montgomery, Naomi Scott, RJ Cyler, Becky G e Ludi Lin como os protagonistas e Elizabeth Banks no papel da vilã Rita Repulsa. Só que o projeto arrecadou US$142 milhões nas bilheterias mundiais — apenas um pouco mais que seu orçamento de US$ 100 milhões. Rumores sobre uma possível continuação existem desde 2017, mas parece que decidiram revitalizar a franquia novamente, já que a Hasbro ainda tem grande desejo em aproveitar a marca, desde que adquiriu os direitos sobre os heróis da Saban.</p>
+                    <p>sso surge como uma decisão curiosa, considerando como as carreiras dos atores originais engrenaram desde então. Montgomery vem sendo elogiado pela performance em Stranger Things, enquanto Scott se tornou a princesa Jasmine no sucesso Aladdin e está no reboot de As Panteras (onde vai retomar a parceria com Banks). Becky G segue como cantora, RJ Cyler fez Sierra Burgess é uma Loser e participações em séries como Black Lightning e Scream; e Ludi Lin apareceu em Aquaman e Black Mirror, além de ser cotado para a nova aposta da Marvel: Shang-Chi.</p>
+                    <p><a href="http://www.adorocinema.com/noticias/filmes/noticia-149345/"  target="_blank"><p>Entrevista removida do site do Adorocinema de forma ilustrativa</p></a></p>
+                </article>
+                
+               </div> <!-- Fecha a Centralização dos Elementos -->   
+            </section>
+            
+            <!-- Rodapé -->
+            <footer id="Rodapé">
+                <p>© 2019 Luis&Hiam - Todos os Direitos Reservados</p>
+            </footer>
+            
+        </div>
+    </body>
+</html>

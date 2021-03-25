@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <Title>AnimeFlex</Title>
+        <Style type="text/css">
+            /* IDS */
+            /* <--------- Padrão da página Ajustes ---------> */
+            #Resolução{
+                width: auto;
+                margin: auto;
+            }
+            /* <--------- Cabeçalho Ajustes ---------> */
+            #Cabeçalho{
+                width: 100%;
+                background-image: url(Utilitarios/Banner.jpg);
+                background-color: aqua;
+                margin-bottom: 40px;
+                float: top;
+                height: 190px;
+            }
+            /* <--------- Navegador Ajustes ---------> */
+            #Navegador{
+                overflow: hidden;
+                background-color:teal;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            /* <--------- Link do navegador Ajustes ---------> */
+            #Navegador a{
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            /* <--------- Hover do navegador com Link Ajustes ---------> */
+            #Navegador a:hover{
+                background: white;
+                color: black;
+            }
+            /* <--------- Botão em verde escuro ---------> */
+            #Navegador a.Ativo{
+                background:rgb(16, 52, 53);
+                color: white;
+            }
+            /* <--------- Corpo Ajustes ---------> */
+            #Corpo{
+                height: 850px;
+                width: 94%;
+                margin:0 0px;
+                float: top;
+                background-color:white
+            }
+            /* <--------- Rodapé Ajustes ---------> */
+            #Rodapé{
+                height: 80px;
+                background-color: rgb(16, 52, 53);
+                float: bottom;
+            }
+            /* <--------- Rodapé paragrafo Ajustes ---------> */
+            #Rodapé p{
+                margin: 0px;
+                padding: 30px;
+                text-align: center;
+                color: #e3e3e3;
+            }
+            /* Class */
+            /* <--------- Div que centraliza noticias ---------> */
+            .MoveLado{
+                margin-left: 4%;
+            }
+            .imgobg{
+                position: fixed;
+                right: 100px;
+            }
+            /* CSS Normal */
+            /* <--------- Body Ajustes ---------> */
+            body {
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* <--------- Fieldset Ajustes ---------> */
+            fieldset{
+                border: 1px solid black;
+                width: 12%;
+            }
+            /* <--------- Ajustes Form ---------> */
+            form{
+                text-align: left;
+                margin-left: 10px;
+            }            
+        </Style>
+    </head>
+
+    <body>
+        <div id="Resolução"> <!-- Mantém o site em uma resolução padrão -->
+
+            <!-- Cabeçalho -->
+            <header id="Cabeçalho">
+                <!-- Background imagem no css -->
+            </header>
+
+            <!-- Navegador do site -->
+            <nav id="Navegador">
+                <a class="Ativo" href="index.html">INICIO</a>
+                <a href="Noticias.html">NOTICIA</a>     
+                <a href="Guia.html">GUIA DE TEMPORADA</a>
+                <a href="Conta.html">FALE CONOSCO</a>
+            </nav>
+                         
+            <!-- Corpo -->
+            <section id="Corpo">
+                
+                <div Class="MoveLado"> <!-- Mantem os elementos dentro centralizados -->
+
+                <div class="Toy"> <!-- Titulo com logo ao lado -->
+                    <h2 class="TitleNoti"><img src="Noticias/Y.png" > Entre em contato consoco  </h2>
+                </div>
+                
+                <div > <!-- Barra devisoria -->
+                    <hr id="barra"> 
+                    <br>
+                </div>
+                <div class="imgobg">
+                    <img src="Utilitarios/Boruto.png" alt="">
+                </div>
+                
+                <div class="Ordenar"> <!-- Div que organiza -->   
+                    <form action="mailto:contato@meusite.com.br" method="post">
+                        <label for="Nome">Nome:</label> 
+                        <br>
+                        <input type="text" name="nome" maxlength="20" placeholder="Insira seu nome">
+                        <br><br>
+                        <label for="Empresa">Empresa:</label>
+                        <br>
+                        <input type="text" name="empresa" maxlength="80" placeholder="Insira o nome da empresa">
+                        <br><br>
+                        <label for="Assunto">Assunto:</label>
+                        <br>
+                        <input type="text" name="assunto" maxlength="20" placeholder="Tema">
+                        <br><br>
+                        <label for="Telefone">Telefone:</label>
+                        <br>
+                        <input type="text"  name="Telefone" maxlength="15" placeholder="Ex.: 0000-0000">
+                        <br><br>
+                        <label for="Celular">Celular:</label>
+                        <br>
+                        <input type="text"  name="Celular" maxlength="15" placeholder="Ex.: 0000-0000">
+                        <br><br>
+                        <fieldset>
+                            <legend>Forma de contato:</legend>
+                            <input type="radio" name="email" id="Email" value="Email" checked="email"><label for="Email">Email</label><br>
+                            <input type="radio" name="email" id="Telefone" value="Telefone"> <label for="Telefone">Telefone</label>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Sexo:</legend>
+                            <input type="radio" name="sexo" id="masculino" value="M" checked="M"><label for="masculino">Masculino</label><br>
+                            <input type="radio" name="sexo" id="feminino" value="F"><label for="feminino">Feminino</label>
+                        </fieldset>
+                        <br>
+                        <label for="Horario">Horario de Contato:</label>
+                        <br>
+                        <input type="number"  name="Horario" min="0" max="24" value="0">
+                        <br><br>
+                        Comentários: <br>
+                        <textarea name="comentario" rows="5" cols="30" placeholder="Comente algo"></textarea><br><br>
+                        <input type="submit" name="enviar" value="Enviar">
+			            <input type="reset" name="limpar" value="Limpar">
+                    </form>
+                </div><!-- Fecha a Class Organizar -->   
+                </div> <!-- Fecha a Centralização dos Elementos -->   
+            </section>
+            
+            <!-- Rodapé -->
+            <footer id="Rodapé">
+                <p>© 2019 Luis&Hiam - Todos os Direitos Reservados</p>
+            </footer>
+            
+        </div>
+    </body>
+</html>

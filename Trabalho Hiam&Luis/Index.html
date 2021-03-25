@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <Title>AnimeFlex</Title>
+        <Style type="text/css">
+            /* IDS */
+            /* <--------- Padrão da página Ajustes ---------> */
+            #Resolução{
+                width: auto;
+                margin: auto;
+            }
+            /* <--------- Cabeçalho Ajustes ---------> */
+            #Cabeçalho{
+                width: 100%;
+                background-image: url(Utilitarios/Banner.jpg);
+                background-color: aqua;
+                margin-bottom: 40px;
+                float: top;
+                height: 190px;
+            }
+            /* <--------- Navegador Ajustes ---------> */
+            #Navegador{
+                overflow: hidden;
+                background-color:teal;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            /* <--------- Link do navegador Ajustes ---------> */
+            #Navegador a{
+                font-family: Arial, Helvetica, sans-serif;
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            /* <--------- Hover do navegador com Link Ajustes ---------> */
+            #Navegador a:hover{
+                background: white;
+                color: black;
+            }
+            /* <--------- Botão em verde escuro ---------> */
+            #Navegador a.Ativo{
+                background:rgb(16, 52, 53);
+                color: white;
+            }
+            /* <--------- Corpo Ajustes ---------> */
+            #Corpo{
+                height: 500px;
+                width: 94%;
+                margin:0 0px;
+                float: top;
+                background-color:white
+            }
+            /* <--------- Rodapé Ajustes ---------> */
+            #Rodapé{
+                height: 80px;
+                background-color: rgb(16, 52, 53);
+                float: bottom;
+            }
+            /* <--------- Rodapé paragrafo Ajustes ---------> */
+            #Rodapé p{
+                margin: 0px;
+                padding: 30px;
+                text-align: center;
+                color: #e3e3e3;
+            }
+            /* <--------- Barra em azul Ajustes ---------> */
+            #HRDentro{
+                border: 0.5px solid;
+                color: #00a5ab;
+            }
+
+            /* Class */
+            /* <--------- Img table de noticias ---------> */
+            .ImgTable{
+                background-image: url(Inicio/Ultraman.jpg);
+                width: 250px;
+                height: 110px;
+            }
+            /* <--------- Img table de noticias sobreposi ---------> */
+            .ImgTable:hover{
+                background-image:url(Inicio/UltramanHover.jpg);
+            }
+            /* <--------- Img table de noticias ---------> */
+            .ImgTable1{
+                background-image: url(Inicio/Power.jpg);
+                width: 250px;
+                height: 110px;
+            }
+            /* <--------- Img table de noticias sobreposi ---------> */
+            .ImgTable1:hover{
+                background-image:url(Inicio/PowerHover.jpg);
+            }
+            /* <--------- Img table de noticias ---------> */
+            .ImgTable2{
+                background-image: url(Inicio/Kame.jpg);
+                width: 250px;
+                height: 110px;
+            }
+            /* <--------- Img table de noticias sobreposi ---------> */
+            .ImgTable2:hover{
+                background-image:url(Inicio/KameHover.jpg);
+            }
+            /* <--------- Img table de noticias ---------> */
+            .ImgTable3{
+                background-image: url(Inicio/Jiraya.jpg);
+                width: 250px;
+                height: 110px;
+            }
+            /* <--------- Img table de noticias sobreposi ---------> */
+            .ImgTable3:hover{
+                background-image: url(Inicio/JirayaHover.jpg);
+            }
+            /* <--------- Texto de data ---------> */
+            .TextData{
+                font-family: Tahoma, sans-serif;
+                color: darkgrey;
+                font-size: 10px;
+                padding: 0px;
+                margin: -5px;
+            }
+            /* <--------- Div que centraliza noticias ---------> */
+            .MoveLado{
+                margin-left: 4%;
+            }
+            /* <--------- Margem do Logo ao lado de Noticias ---------> */
+            .Toy{
+                margin-left: 10px;
+            }
+            /* <--------- Ajuste da Margem do titulo "Notcias" ---------> */
+            .TitleNoti{
+                margin: 0px
+            }
+
+            /* CSS Normal */
+            /* <--------- Body Ajustes ---------> */
+            body {
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* <--------- Table Ajustes ---------> */
+            table{
+                float: left;
+                border-collapse: collapse;
+            }
+            /* <--------- Elementos do table Ajustes ---------> */
+            table, tr, td{
+                height: 23%;
+                width: 23.4%;
+                text-align: center;
+                padding: 2px;
+                margin: 10px;
+            }
+            /* <--------- Barra abaixo de noticias Ajustes ---------> */
+            hr#barra{
+                width: 100%;
+                margin: 1%;
+                margin-bottom: 1%;
+                border: 1px solid;
+            }
+            /* <--------- TH Ajustes ---------> */
+            th{
+                margin: 0px;
+                padding: 0px;
+            }
+
+        </Style>
+    </head>
+
+    <body>
+        <div id="Resolução"> <!-- Mantém o site em uma resolução padrão -->
+
+            <!-- Cabeçalho -->
+            <header id="Cabeçalho">
+                <!-- Background imagem no css -->
+            </header>
+
+            <!-- Navegador do site -->
+            <nav id="Navegador">
+                <a class="Ativo" href="index.html">INICIO</a>
+                <a href="Noticias.html">NOTICIA</a>     
+                <a href="Guia.html">GUIA DE TEMPORADA</a>
+                <a href="Conta.html">FALE CONOSCO</a>
+            </nav>
+                         
+            <!-- Corpo -->
+            <section id="Corpo">
+                
+                <div Class="MoveLado"> <!-- Mantem os elementos dentro centralizados -->
+
+                <div class="Toy"> <!-- Titulo com logo ao lado -->
+                    <h2 class="TitleNoti"><img src="Noticias/Y.png" > Últimas Notícias  </h2>
+                </div>
+                
+                <div > <!-- Barra devisoria -->
+                    <hr id="barra"> 
+                </div>
+
+                <div class="Coluna1"> <!-- Coluna 1 de Noticias -->
+                    <table> <!-- Table 1 de Noticias -->
+                        <tr>
+                            <th> Netflix divulga trailer de nova <br> serie de Ultraman <hr id="HRDentro"> </th>
+                        </tr>
+                        <tr>
+                            <td> <a href="Ultraman.html"><img src="Utilitarios/NoFace.png" class="ImgTable" ></a></td>
+                        </tr>
+                        <tr>
+                            <td> <p class="TextData">segunda-feira, 23 de setembro de 2019 às 16:34</p> </td>
+                        </tr>
+                    </table>
+                    <table> <!-- Table 2 de Noticias -->
+                        <tr>
+                           <th> Power Rangers pode ganhar <br> reboot com novo elenco <hr id="HRDentro"></th>
+                        </tr>
+                        <tr>
+                           <td><a href="Power.html"><img src="Utilitarios/NoFace.png" class="ImgTable1" ></a></td>
+                        </tr>
+                        <tr>
+                            <td><p class="TextData">segunda-feira, 23 de setembro de 2019 às 16:34</p></td>
+                        </tr>
+                    </table>
+                    <table> <!-- Table 3 de Noticias -->
+                        <tr>
+                            <th>Ator que interpretou Jiraya comemora carinho dos fãs em SP <hr id="HRDentro"></th>
+                        </tr>
+                        <tr>
+                            <td><a href="Jiraya.html"><img src="Utilitarios/NoFace.png" class="ImgTable3" ></a></td>
+                        </tr>
+                        <tr>
+                            <td><p class="TextData">segunda-feira, 23 de setembro de 2019 às 16:34</p></td>
+                        </tr>
+                    </table>
+                    <table> <!-- Table 4 de Noticias -->
+                        <tr>
+                            <th>Filmes de Kamen Rider e Super Sentai é divulgado pela TOEI <hr id="HRDentro"></th>
+                        </tr>
+                        <tr>
+                            <td><a href="Kamen.html"><img src="Utilitarios/NoFace.png" class="ImgTable2" ></a></td>
+                        </tr>
+                        <tr>
+                            <td><p class="TextData">segunda-feira, 23 de setembro de 2019 às 16:34</p></td>
+                        </tr>
+                    </table>
+                </div> <!-- Fecha a Coluna 1 de Noticias -->
+
+                </div> <!-- Fecha a Centralização dos Elementos -->   
+            </section>
+            
+            <!-- Rodapé -->
+            <footer id="Rodapé">
+                <p>© 2019 Luis&Hiam - Todos os Direitos Reservados</p>
+            </footer>
+            
+        </div>
+    </body>
+</html>
